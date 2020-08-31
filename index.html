@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+    <!--  SIDEBAR  -->
+    <div id="sidebar-wrapper">
+        <div class="sidebar-heading"><img src="logo.png" alt=""><span>Painel Administrativo</span></div>
+        <div class="list-group list-group-flush border-right">
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Início</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i>Funcionários</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-box-open"></i>Produtos</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>Categorias</a>
+            <a href="#" class="list-group-item list-group-item-action"><i
+                    class="fas fa-people-carry"></i>Fornecedores</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="far fa-chart-bar"></i>Relatórios</a>
+        </div>
+    </div>
+
+    <!--  CONTEUDO  -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light" id="my-navbar">
+
+            <span id="menu-toggle" class="mr-auto"><img src="logo.png" class="mx-auto d-block" alt=""></span>
+
+            <a class="navbar-brand" href="#" id="navbar-site-title">Painel</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-navbar-collapse"
+                    aria-controls="menu-navbar-collapse" aria-expanded="false" aria-label="Exibe Navbar Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+                <form class="form-inline" id="navbar-search-form">
+                    <input type="text" class="form-control form-field my-form-field" placeholder="Pesquisar"
+                           id="navbar-search-field">
+                </form>
+
+                <div id="navbar-profile" class="ml-auto">
+                    <img src="https://avatars3.githubusercontent.com/u/6815809?s=460&u=3a210688706170155569c85204e0bc07102cdc1d&v=4"
+                         alt="" srcset="">
+                    <span>José Batista</span>
+                </div>
+            </div>
+        </nav>
+        <div id="content" class="container">
+
+            <!--TABELA-->
+            <div class="table-title">
+                <h3>Usuários</h3>
+                <input type="text" class="form-control form-field my-form-field" placeholder="Pesquisar">
+            </div>
+            <table class="table bg-white">
+                <thead>
+                <tr>
+                    <th class="table-col-title">#</th>
+                    <th class="table-col-title">NOME</th>
+                    <th class="table-col-title">SOBRENOME</th>
+                    <th class="table-col-title">USUÁRIO</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>José</td>
+                    <td>Pereira</td>
+                    <td>@jpereira</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--FORMULARIO-->
+            <h3 id="main-page-form-title" class="my-text-3">Novo artigo</h3>
+            <div>
+                <form class="card my-form">
+                    <div class="card-body my-form-body">
+                        <div class="form-group">
+                            <label for="autor">Autor</label>
+                            <input type="text" class="form-control form-field my-form-field" id="autor"
+                                   placeholder="Autor">
+                            <hr>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="titulo">Título</label>
+                            <input type="text" class="form-control form-field my-form-field" id="titulo"
+                                   placeholder="Título">
+                            <hr>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="conteudo">Conteúdo</label>
+                            <textarea class="form-control form-field my-form-field" id="conteudo"
+                                      placeholder="Conteúdo"></textarea>
+                            <hr>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data</label>
+                            <input type="date" class="form-control form-field my-form-field" id="data">
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="confirm-btns">
+                            <button class="btn btn-primary">Criar e adicionar outro</button>
+                            <button class="btn btn-primary">Publicar post</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h3 id="vendas-h3">Vendas</h3>
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="relatorio"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+<script>
+    $("#menu-toggle").click(function (event) {
+        event.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+<script>
+    var contexto = document.getElementById('relatorio').getContext('2d');
+    var grafico = new Chart(contexto, {
+        type: 'line',
+        data: {
+            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+            datasets: [{
+                label: 'Vendas no ano',
+                backgroundColor: "#5898d9ff",
+                borderColor: "#5898d9ff",
+                data: [10, 5, 7, 18, 14, 20, 22]
+            }]
+        }
+    });
+
+</script>
+</body>
+</html>
